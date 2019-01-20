@@ -6,6 +6,31 @@
 
 ## QuickStart
 
+### First time
+
+Please make config file for your env, such as `local` to `config/config.local.js`.
+
+```
+'use strict';
+
+exports.wechat = {
+  app_id: 'wx1234567890123', // wechat mini program app id
+  app_secret: 'XXXXXXXXXXXXXXXXXXXX', // wechat mini program app secret
+};
+
+exports.jwt_secret = '123456'; // jwt token (must random!)
+
+exports.sequelize = {
+  dialect: 'mysql',
+  database: 'gogo', // db name
+  host: 'localhost', // db host
+  port: 3306,
+  username: 'root', // db user
+  password: '', // db password
+};
+
+```
+
 ### Development
 
 ```bash
@@ -29,3 +54,8 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+### docker
+
+[Please read this document, thx](https://sysu-gogo.github.io/sysu-gogo-food-docs/08-04-run-doc)
+
