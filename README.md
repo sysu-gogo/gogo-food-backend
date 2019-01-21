@@ -2,7 +2,13 @@
 
 ## Document
 
-[Here you can get more detail about this project](https://sysu-gogo.github.io/sysu-gogo-food-docs/)
+- [Usecase Diagram(用例图)](https://sysu-gogo.github.io/sysu-gogo-food-docs/06-01-use-case-diagram)
+- [Use Cases(用例+活动图)](https://sysu-gogo.github.io/sysu-gogo-food-docs/06-02-use-case)
+- [Domian Models(领域模型)](https://sysu-gogo.github.io/sysu-gogo-food-docs/06-03-domain)
+- [State Models(状态模型)](https://sysu-gogo.github.io/sysu-gogo-food-docs/06-04-statement)
+- [System Sequence Diagrams(功能模型)](https://sysu-gogo.github.io/sysu-gogo-food-docs/06-05-System-Sequence-Diagram)
+- [Database Design(数据库设计)](https://sysu-gogo.github.io/sysu-gogo-food-docs/07-02-database-design)
+- [API design(API接口文档)](https://app.swaggerhub.com/apis/micblo/gogo-food/1.0.0)
 
 ## QuickStart
 
