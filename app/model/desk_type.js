@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = app => {
-  const { STRING } = app.Sequelize;
+  const { STRING, BOOLEAN } = app.Sequelize;
 
   const model = app.model.define('desk_type', {
     name: {
@@ -10,6 +10,11 @@ module.exports = app => {
     },
     description: {
       type: STRING,
+    },
+    need_queue: {
+      type: BOOLEAN,
+      defaultValue: false,
+      allowNull: false,
     },
   });
 

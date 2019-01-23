@@ -27,11 +27,14 @@ class DeskTypeController extends Controller {
     const { ctx } = this;
     const { id } = ctx.params;
     const { name,
-      description } = ctx.request.body;
+      description,
+      need_queue, // 是否需要排队
+    } = ctx.request.body;
 
     const form = {
       name,
       description,
+      need_queue,
     };
     for (const key in form) {
       if (form[key] === undefined) delete form[key];

@@ -55,4 +55,12 @@ module.exports = app => {
   router.put('/file/:id', only_admin, controller.file.update);
   router.delete('/file/:id', only_admin, controller.file.delete);
 
+  // 排队
+  router.get('/queue', authorize, controller.queue.detail);
+  router.get('/queue/brief', only_admin, controller.queue.getBriefInfo);
+  router.post('/queue', only_admin, authorize, controller.queue.create);
+  router.put('/queue/use', only_admin, controller.queue.use);
+  router.put('/queue/cancel', authorize, controller.queue.cancel);
+  router.delete('/queue', only_admin, controller.queue.clean);
+
 };
